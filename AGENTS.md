@@ -23,6 +23,10 @@
 2. 每次学习会话都产出：关键概念、代码定位、一个实战练习。
 3. 我会持续挑战假设、指出权衡，并确保建议基于证据与源码事实。
 
+## 文档检索规则
+1. 必要时，使用 `sosumi.ai` 抓取和转换 Apple 官方文档（例如 `Investigating memory access crashes`）为可检索 Markdown，提升阅读效率与辅导质量。
+2. 对 `sosumi.ai` 的提炼结论，需在关键点回到 Apple 原文与 Xcode 实际行为做交叉验证，避免误读或过度推断。
+
 ## DemoProj 使用规则
 1. 默认使用 `DemoProj/LearnKSCrash` 作为实验工程，通过“手动触发异常 -> 读取报告 -> 反查源码”学习 KSCrash 调用链。
 2. 推荐实验顺序：`Signal/Mach` -> `NSException` -> `UserReported` -> `Watchdog/Hang` -> `OOM breadcrumb`。
