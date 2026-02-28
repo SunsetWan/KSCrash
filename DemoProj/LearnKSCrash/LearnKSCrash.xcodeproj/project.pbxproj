@@ -1,0 +1,680 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CB79D2872F52A1A0001DDAFE /* BootTimeMonitor in Frameworks */ = {isa = PBXBuildFile; productRef = CB79D2862F52A1A0001DDAFE /* BootTimeMonitor */; };
+		CB79D2892F52A1A0001DDAFE /* DemangleFilter in Frameworks */ = {isa = PBXBuildFile; productRef = CB79D2882F52A1A0001DDAFE /* DemangleFilter */; };
+		CB79D28B2F52A1A0001DDAFE /* DiscSpaceMonitor in Frameworks */ = {isa = PBXBuildFile; productRef = CB79D28A2F52A1A0001DDAFE /* DiscSpaceMonitor */; };
+		CB79D28D2F52A1A0001DDAFE /* Filters in Frameworks */ = {isa = PBXBuildFile; productRef = CB79D28C2F52A1A0001DDAFE /* Filters */; };
+		CB79D28F2F52A1A0001DDAFE /* Installations in Frameworks */ = {isa = PBXBuildFile; productRef = CB79D28E2F52A1A0001DDAFE /* Installations */; };
+		CB79D2912F52A1A0001DDAFE /* Recording in Frameworks */ = {isa = PBXBuildFile; productRef = CB79D2902F52A1A0001DDAFE /* Recording */; };
+		CB79D2932F52A1A0001DDAFE /* Reporting in Frameworks */ = {isa = PBXBuildFile; productRef = CB79D2922F52A1A0001DDAFE /* Reporting */; };
+		CB79D2952F52A1A0001DDAFE /* Sinks in Frameworks */ = {isa = PBXBuildFile; productRef = CB79D2942F52A1A0001DDAFE /* Sinks */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CB79D2682F52A0E8001DDAFE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB79D2492F52A0E6001DDAFE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CB79D2502F52A0E6001DDAFE;
+			remoteInfo = LearnKSCrash;
+		};
+		CB79D2722F52A0E8001DDAFE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB79D2492F52A0E6001DDAFE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CB79D2502F52A0E6001DDAFE;
+			remoteInfo = LearnKSCrash;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CB79D2512F52A0E6001DDAFE /* LearnKSCrash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearnKSCrash.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB79D2672F52A0E8001DDAFE /* LearnKSCrashTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LearnKSCrashTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB79D2712F52A0E8001DDAFE /* LearnKSCrashUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LearnKSCrashUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		CB79D2792F52A0E8001DDAFE /* Exceptions for "LearnKSCrash" folder in "LearnKSCrash" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = CB79D2502F52A0E6001DDAFE /* LearnKSCrash */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		CB79D2532F52A0E6001DDAFE /* LearnKSCrash */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				CB79D2792F52A0E8001DDAFE /* Exceptions for "LearnKSCrash" folder in "LearnKSCrash" target */,
+			);
+			path = LearnKSCrash;
+			sourceTree = "<group>";
+		};
+		CB79D26A2F52A0E8001DDAFE /* LearnKSCrashTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = LearnKSCrashTests;
+			sourceTree = "<group>";
+		};
+		CB79D2742F52A0E8001DDAFE /* LearnKSCrashUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = LearnKSCrashUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CB79D24E2F52A0E6001DDAFE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB79D28F2F52A1A0001DDAFE /* Installations in Frameworks */,
+				CB79D28D2F52A1A0001DDAFE /* Filters in Frameworks */,
+				CB79D2912F52A1A0001DDAFE /* Recording in Frameworks */,
+				CB79D2872F52A1A0001DDAFE /* BootTimeMonitor in Frameworks */,
+				CB79D2932F52A1A0001DDAFE /* Reporting in Frameworks */,
+				CB79D2952F52A1A0001DDAFE /* Sinks in Frameworks */,
+				CB79D2892F52A1A0001DDAFE /* DemangleFilter in Frameworks */,
+				CB79D28B2F52A1A0001DDAFE /* DiscSpaceMonitor in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB79D2642F52A0E8001DDAFE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB79D26E2F52A0E8001DDAFE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CB79D2482F52A0E6001DDAFE = {
+			isa = PBXGroup;
+			children = (
+				CB79D2532F52A0E6001DDAFE /* LearnKSCrash */,
+				CB79D26A2F52A0E8001DDAFE /* LearnKSCrashTests */,
+				CB79D2742F52A0E8001DDAFE /* LearnKSCrashUITests */,
+				CB79D2522F52A0E6001DDAFE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CB79D2522F52A0E6001DDAFE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CB79D2512F52A0E6001DDAFE /* LearnKSCrash.app */,
+				CB79D2672F52A0E8001DDAFE /* LearnKSCrashTests.xctest */,
+				CB79D2712F52A0E8001DDAFE /* LearnKSCrashUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CB79D2502F52A0E6001DDAFE /* LearnKSCrash */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB79D27A2F52A0E8001DDAFE /* Build configuration list for PBXNativeTarget "LearnKSCrash" */;
+			buildPhases = (
+				CB79D24D2F52A0E6001DDAFE /* Sources */,
+				CB79D24E2F52A0E6001DDAFE /* Frameworks */,
+				CB79D24F2F52A0E6001DDAFE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				CB79D2532F52A0E6001DDAFE /* LearnKSCrash */,
+			);
+			name = LearnKSCrash;
+			packageProductDependencies = (
+				CB79D2862F52A1A0001DDAFE /* BootTimeMonitor */,
+				CB79D2882F52A1A0001DDAFE /* DemangleFilter */,
+				CB79D28A2F52A1A0001DDAFE /* DiscSpaceMonitor */,
+				CB79D28C2F52A1A0001DDAFE /* Filters */,
+				CB79D28E2F52A1A0001DDAFE /* Installations */,
+				CB79D2902F52A1A0001DDAFE /* Recording */,
+				CB79D2922F52A1A0001DDAFE /* Reporting */,
+				CB79D2942F52A1A0001DDAFE /* Sinks */,
+			);
+			productName = LearnKSCrash;
+			productReference = CB79D2512F52A0E6001DDAFE /* LearnKSCrash.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CB79D2662F52A0E8001DDAFE /* LearnKSCrashTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB79D27F2F52A0E8001DDAFE /* Build configuration list for PBXNativeTarget "LearnKSCrashTests" */;
+			buildPhases = (
+				CB79D2632F52A0E8001DDAFE /* Sources */,
+				CB79D2642F52A0E8001DDAFE /* Frameworks */,
+				CB79D2652F52A0E8001DDAFE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CB79D2692F52A0E8001DDAFE /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				CB79D26A2F52A0E8001DDAFE /* LearnKSCrashTests */,
+			);
+			name = LearnKSCrashTests;
+			packageProductDependencies = (
+			);
+			productName = LearnKSCrashTests;
+			productReference = CB79D2672F52A0E8001DDAFE /* LearnKSCrashTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CB79D2702F52A0E8001DDAFE /* LearnKSCrashUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB79D2822F52A0E8001DDAFE /* Build configuration list for PBXNativeTarget "LearnKSCrashUITests" */;
+			buildPhases = (
+				CB79D26D2F52A0E8001DDAFE /* Sources */,
+				CB79D26E2F52A0E8001DDAFE /* Frameworks */,
+				CB79D26F2F52A0E8001DDAFE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CB79D2732F52A0E8001DDAFE /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				CB79D2742F52A0E8001DDAFE /* LearnKSCrashUITests */,
+			);
+			name = LearnKSCrashUITests;
+			packageProductDependencies = (
+			);
+			productName = LearnKSCrashUITests;
+			productReference = CB79D2712F52A0E8001DDAFE /* LearnKSCrashUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CB79D2492F52A0E6001DDAFE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2620;
+				LastUpgradeCheck = 2620;
+				TargetAttributes = {
+					CB79D2502F52A0E6001DDAFE = {
+						CreatedOnToolsVersion = 26.2;
+					};
+					CB79D2662F52A0E8001DDAFE = {
+						CreatedOnToolsVersion = 26.2;
+						TestTargetID = CB79D2502F52A0E6001DDAFE;
+					};
+					CB79D2702F52A0E8001DDAFE = {
+						CreatedOnToolsVersion = 26.2;
+						TestTargetID = CB79D2502F52A0E6001DDAFE;
+					};
+				};
+			};
+			buildConfigurationList = CB79D24C2F52A0E6001DDAFE /* Build configuration list for PBXProject "LearnKSCrash" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CB79D2482F52A0E6001DDAFE;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				CB79D2852F52A1A0001DDAFE /* XCRemoteSwiftPackageReference "KSCrash" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = CB79D2522F52A0E6001DDAFE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CB79D2502F52A0E6001DDAFE /* LearnKSCrash */,
+				CB79D2662F52A0E8001DDAFE /* LearnKSCrashTests */,
+				CB79D2702F52A0E8001DDAFE /* LearnKSCrashUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CB79D24F2F52A0E6001DDAFE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB79D2652F52A0E8001DDAFE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB79D26F2F52A0E8001DDAFE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CB79D24D2F52A0E6001DDAFE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB79D2632F52A0E8001DDAFE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB79D26D2F52A0E8001DDAFE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CB79D2692F52A0E8001DDAFE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CB79D2502F52A0E6001DDAFE /* LearnKSCrash */;
+			targetProxy = CB79D2682F52A0E8001DDAFE /* PBXContainerItemProxy */;
+		};
+		CB79D2732F52A0E8001DDAFE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CB79D2502F52A0E6001DDAFE /* LearnKSCrash */;
+			targetProxy = CB79D2722F52A0E8001DDAFE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		CB79D27B2F52A0E8001DDAFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4MS63X2MZ8;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LearnKSCrash/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sunset.learn.2026.LearnKSCrash;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CB79D27C2F52A0E8001DDAFE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4MS63X2MZ8;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LearnKSCrash/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sunset.learn.2026.LearnKSCrash;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CB79D27D2F52A0E8001DDAFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 4MS63X2MZ8;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CB79D27E2F52A0E8001DDAFE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 4MS63X2MZ8;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CB79D2802F52A0E8001DDAFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4MS63X2MZ8;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sunset.learn.2026.LearnKSCrashTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LearnKSCrash.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LearnKSCrash";
+			};
+			name = Debug;
+		};
+		CB79D2812F52A0E8001DDAFE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4MS63X2MZ8;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sunset.learn.2026.LearnKSCrashTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LearnKSCrash.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LearnKSCrash";
+			};
+			name = Release;
+		};
+		CB79D2832F52A0E8001DDAFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4MS63X2MZ8;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sunset.learn.2026.LearnKSCrashUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LearnKSCrash;
+			};
+			name = Debug;
+		};
+		CB79D2842F52A0E8001DDAFE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4MS63X2MZ8;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sunset.learn.2026.LearnKSCrashUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LearnKSCrash;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CB79D24C2F52A0E6001DDAFE /* Build configuration list for PBXProject "LearnKSCrash" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB79D27D2F52A0E8001DDAFE /* Debug */,
+				CB79D27E2F52A0E8001DDAFE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB79D27A2F52A0E8001DDAFE /* Build configuration list for PBXNativeTarget "LearnKSCrash" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB79D27B2F52A0E8001DDAFE /* Debug */,
+				CB79D27C2F52A0E8001DDAFE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB79D27F2F52A0E8001DDAFE /* Build configuration list for PBXNativeTarget "LearnKSCrashTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB79D2802F52A0E8001DDAFE /* Debug */,
+				CB79D2812F52A0E8001DDAFE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB79D2822F52A0E8001DDAFE /* Build configuration list for PBXNativeTarget "LearnKSCrashUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB79D2832F52A0E8001DDAFE /* Debug */,
+				CB79D2842F52A0E8001DDAFE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CB79D2852F52A1A0001DDAFE /* XCRemoteSwiftPackageReference "KSCrash" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kstenerud/KSCrash.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.5.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CB79D2862F52A1A0001DDAFE /* BootTimeMonitor */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CB79D2852F52A1A0001DDAFE /* XCRemoteSwiftPackageReference "KSCrash" */;
+			productName = BootTimeMonitor;
+		};
+		CB79D2882F52A1A0001DDAFE /* DemangleFilter */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CB79D2852F52A1A0001DDAFE /* XCRemoteSwiftPackageReference "KSCrash" */;
+			productName = DemangleFilter;
+		};
+		CB79D28A2F52A1A0001DDAFE /* DiscSpaceMonitor */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CB79D2852F52A1A0001DDAFE /* XCRemoteSwiftPackageReference "KSCrash" */;
+			productName = DiscSpaceMonitor;
+		};
+		CB79D28C2F52A1A0001DDAFE /* Filters */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CB79D2852F52A1A0001DDAFE /* XCRemoteSwiftPackageReference "KSCrash" */;
+			productName = Filters;
+		};
+		CB79D28E2F52A1A0001DDAFE /* Installations */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CB79D2852F52A1A0001DDAFE /* XCRemoteSwiftPackageReference "KSCrash" */;
+			productName = Installations;
+		};
+		CB79D2902F52A1A0001DDAFE /* Recording */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CB79D2852F52A1A0001DDAFE /* XCRemoteSwiftPackageReference "KSCrash" */;
+			productName = Recording;
+		};
+		CB79D2922F52A1A0001DDAFE /* Reporting */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CB79D2852F52A1A0001DDAFE /* XCRemoteSwiftPackageReference "KSCrash" */;
+			productName = Reporting;
+		};
+		CB79D2942F52A1A0001DDAFE /* Sinks */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CB79D2852F52A1A0001DDAFE /* XCRemoteSwiftPackageReference "KSCrash" */;
+			productName = Sinks;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = CB79D2492F52A0E6001DDAFE /* Project object */;
+}
