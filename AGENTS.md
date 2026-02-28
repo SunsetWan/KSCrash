@@ -22,3 +22,15 @@
 1. 采用按周小步迭代：阅读 -> 验证 -> 总结 -> 应用。
 2. 每次学习会话都产出：关键概念、代码定位、一个实战练习。
 3. 我会持续挑战假设、指出权衡，并确保建议基于证据与源码事实。
+
+## DemoProj 使用规则
+1. 默认使用 `DemoProj/LearnKSCrash` 作为实验工程，通过“手动触发异常 -> 读取报告 -> 反查源码”学习 KSCrash 调用链。
+2. 推荐实验顺序：`Signal/Mach` -> `NSException` -> `UserReported` -> `Watchdog/Hang` -> `OOM breadcrumb`。
+3. 每个实验至少做两轮验证：
+   第一轮：Xcode 调试器附加场景（便于断点和观察）。
+   第二轮：非 debugger 附加场景（验证真实链路，避免 monitor 被调试器影响）。
+4. 非 debugger 附加可用任一方式：
+   方式 A：`Edit Scheme -> Run -> 取消 Debug executable` 后运行并触发异常。
+   方式 B：先安装 App，再从模拟器/真机桌面图标直接启动并触发异常（不从 Xcode Run）。
+5. 每次实验固定记录四项：触发方式、预期 monitor、实际 report 关键字段（如 `monitorId`/`error.type`/`run_id`/`threads`）、对应源码入口与调用链。
+6. 我在辅导中需要把每次实验结果映射到源码链路：`monitor入口 -> notify -> handle -> onExceptionEvent -> report write/stitch`，并指出与预期不一致的原因。
