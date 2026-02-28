@@ -27,6 +27,10 @@
 1. 必要时，使用 `sosumi.ai` 抓取和转换 Apple 官方文档（例如 `Investigating memory access crashes`）为可检索 Markdown，提升阅读效率与辅导质量。
 2. 对 `sosumi.ai` 的提炼结论，需在关键点回到 Apple 原文与 Xcode 实际行为做交叉验证，避免误读或过度推断。
 
+## 文档落盘规则
+1. 默认所有学习文档都放在 `sunset-doc/` 下，除非你明确指定其他目录。
+2. 当你只说相对路径（例如 `/CrashType/MachBadAccess.md`）时，默认解析为 `sunset-doc/CrashType/MachBadAccess.md`。
+
 ## DemoProj 使用规则
 1. 默认使用 `DemoProj/LearnKSCrash` 作为实验工程，通过“手动触发异常 -> 读取报告 -> 反查源码”学习 KSCrash 调用链。
 2. 推荐实验顺序：`Signal/Mach` -> `NSException` -> `UserReported` -> `Watchdog/Hang` -> `OOM breadcrumb`。

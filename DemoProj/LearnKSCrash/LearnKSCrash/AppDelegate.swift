@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import KSCrashRecording
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,10 +16,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         _ application: UIApplication,
         didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
     ) -> Bool {
+        installKSCrash()
+
         let window = UIWindow(frame: UIScreen.main.bounds)
         window.rootViewController = ViewController()
         window.makeKeyAndVisible()
         self.window = window
         return true
+    }
+
+    private func installKSCrash() {
+        let configuration = KSCrashConfiguration()
+        do {
+            try KSCrash.shared.install(with: configuration)
+            print("[LearnKSCrash] KSCrash installed")
+        } catch {
+            print("[LearnKSCrash] KSCrash install failed: \(error)")
+        }
     }
 }
